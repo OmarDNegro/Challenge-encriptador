@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url(background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1{
+    display:block;
+    font-size: 50px;
+    font-style: italic;
+    color: #6b6b6b;
+    text-align: left;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    display: inline-block;
+    margin-top: 300px;
+    width: 150%;
+}
+
+textarea {
+    font: italic;
+    color: #6b6b6b;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(192,192,192,0.8) 0%, rgba(192,192,192,0) 100%);   
+    position: relative;
+    border-width: 2px 4px;
+    border-color: #f1dbc0;
+    font-size: large;
+    border-radius: 40px;
+}
+
+.resultado{
+    margin-left: 80px;
+}
+
+
+textarea::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+.botones {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #997d5a;
+    color: #F2E8DF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+button:hover{
+    background: rgb(31, 117, 230);
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.botonencriptar, .botondesencriptar{
+    margin-left: 1vw;
+}
+
+.botoncopiar{
+    position: relative;
+    margin-left: 33vw;
+}
+
+h2 { 
+    font-size: 15px;
+    font-style: italic;
+}
+footer {
+    text-align: center;
+    margin-top:250px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+/* Media query para dispositivos con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    textarea {
+        display: inline-block;
+        margin-left: 10vw;
+        rows: 5; /* Reducir el número de filas en dispositivos pequeños */
+    }
+
+    .botones{
+        display:flex;
+    }
+    .botoncopiar{
+    
+    }
+}
