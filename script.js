@@ -7,11 +7,11 @@ const encriptacion = {
   };
   
   const desencriptacion = {
-    'enter': 'e',
-    'imes': 'i',
-    'ai': 'a',
+    'ufat': 'u',
     'ober': 'o',
-    'ufat': 'u'
+    'ai': 'a',
+    'imes': 'i',
+    'enter': 'e',
   };
   
   document.addEventListener('DOMContentLoaded', function() {
